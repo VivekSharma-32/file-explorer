@@ -63,7 +63,12 @@ const App = () => {
             ...node,
             children: [
               ...node.children,
-              { id: "123", name: name, isFolder: true, children: [] },
+              {
+                id: Date.now().toString(),
+                name: name,
+                isFolder: true,
+                children: [],
+              },
             ],
           };
         }
